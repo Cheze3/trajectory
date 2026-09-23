@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /opt/homebrew/Cellar/opencv/5.0.0_9/include/opencv5
+CXX_INCLUDES = -I/Users/binh/Desktop/wspace/trajectory/include -isystem /opt/homebrew/Cellar/opencv/5.0.0_9/include/opencv5
 
 CXX_FLAGSarm64 =  -arch arm64
 

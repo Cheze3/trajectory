@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/binh/Desktop/wspace/trajectory/simulator.cpp" "CMakeFiles/MyProject.dir/simulator.cpp.o" "gcc" "CMakeFiles/MyProject.dir/simulator.cpp.o.d"
+  "/Users/binh/Desktop/wspace/trajectory/src/camera.cpp" "CMakeFiles/MyProject.dir/src/camera.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/camera.cpp.o.d"
+  "/Users/binh/Desktop/wspace/trajectory/src/main.cpp" "CMakeFiles/MyProject.dir/src/main.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

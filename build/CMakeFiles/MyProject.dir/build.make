@@ -72,28 +72,44 @@ include CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/codegen:
 .PHONY : CMakeFiles/MyProject.dir/codegen
 
-CMakeFiles/MyProject.dir/simulator.cpp.o: CMakeFiles/MyProject.dir/flags.make
-CMakeFiles/MyProject.dir/simulator.cpp.o: /Users/binh/Desktop/wspace/trajectory/simulator.cpp
-CMakeFiles/MyProject.dir/simulator.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyProject.dir/simulator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/simulator.cpp.o -MF CMakeFiles/MyProject.dir/simulator.cpp.o.d -o CMakeFiles/MyProject.dir/simulator.cpp.o -c /Users/binh/Desktop/wspace/trajectory/simulator.cpp
+CMakeFiles/MyProject.dir/src/main.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/main.cpp.o: /Users/binh/Desktop/wspace/trajectory/src/main.cpp
+CMakeFiles/MyProject.dir/src/main.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyProject.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/main.cpp.o -MF CMakeFiles/MyProject.dir/src/main.cpp.o.d -o CMakeFiles/MyProject.dir/src/main.cpp.o -c /Users/binh/Desktop/wspace/trajectory/src/main.cpp
 
-CMakeFiles/MyProject.dir/simulator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/simulator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/binh/Desktop/wspace/trajectory/simulator.cpp > CMakeFiles/MyProject.dir/simulator.cpp.i
+CMakeFiles/MyProject.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/binh/Desktop/wspace/trajectory/src/main.cpp > CMakeFiles/MyProject.dir/src/main.cpp.i
 
-CMakeFiles/MyProject.dir/simulator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/simulator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/binh/Desktop/wspace/trajectory/simulator.cpp -o CMakeFiles/MyProject.dir/simulator.cpp.s
+CMakeFiles/MyProject.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/binh/Desktop/wspace/trajectory/src/main.cpp -o CMakeFiles/MyProject.dir/src/main.cpp.s
+
+CMakeFiles/MyProject.dir/src/camera.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/camera.cpp.o: /Users/binh/Desktop/wspace/trajectory/src/camera.cpp
+CMakeFiles/MyProject.dir/src/camera.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyProject.dir/src/camera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/camera.cpp.o -MF CMakeFiles/MyProject.dir/src/camera.cpp.o.d -o CMakeFiles/MyProject.dir/src/camera.cpp.o -c /Users/binh/Desktop/wspace/trajectory/src/camera.cpp
+
+CMakeFiles/MyProject.dir/src/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/camera.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/binh/Desktop/wspace/trajectory/src/camera.cpp > CMakeFiles/MyProject.dir/src/camera.cpp.i
+
+CMakeFiles/MyProject.dir/src/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/camera.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/binh/Desktop/wspace/trajectory/src/camera.cpp -o CMakeFiles/MyProject.dir/src/camera.cpp.s
 
 # Object files for target MyProject
 MyProject_OBJECTS = \
-"CMakeFiles/MyProject.dir/simulator.cpp.o"
+"CMakeFiles/MyProject.dir/src/main.cpp.o" \
+"CMakeFiles/MyProject.dir/src/camera.cpp.o"
 
 # External object files for target MyProject
 MyProject_EXTERNAL_OBJECTS =
 
-MyProject: CMakeFiles/MyProject.dir/simulator.cpp.o
+MyProject: CMakeFiles/MyProject.dir/src/main.cpp.o
+MyProject: CMakeFiles/MyProject.dir/src/camera.cpp.o
 MyProject: CMakeFiles/MyProject.dir/build.make
 MyProject: /opt/homebrew/lib/libopencv_stitching.5.0.0.dylib
 MyProject: /opt/homebrew/lib/libopencv_alphamat.5.0.0.dylib
@@ -153,7 +169,7 @@ MyProject: /opt/homebrew/lib/libopencv_geometry.5.0.0.dylib
 MyProject: /opt/homebrew/lib/libopencv_flann.5.0.0.dylib
 MyProject: /opt/homebrew/lib/libopencv_core.5.0.0.dylib
 MyProject: CMakeFiles/MyProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MyProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MyProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
