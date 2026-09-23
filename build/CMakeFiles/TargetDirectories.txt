@@ -1,0 +1,3 @@
+/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles/MyProject.dir
+/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles/edit_cache.dir
+/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles/rebuild_cache.dir
