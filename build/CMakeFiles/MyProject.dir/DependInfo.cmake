@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/binh/Desktop/wspace/trajectory/src/camera.cpp" "CMakeFiles/MyProject.dir/src/camera.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/camera.cpp.o.d"
+  "/Users/binh/Desktop/wspace/trajectory/src/detector.cpp" "CMakeFiles/MyProject.dir/src/detector.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/detector.cpp.o.d"
   "/Users/binh/Desktop/wspace/trajectory/src/main.cpp" "CMakeFiles/MyProject.dir/src/main.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/main.cpp.o.d"
   )
 

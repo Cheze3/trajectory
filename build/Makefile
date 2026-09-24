@@ -153,6 +153,30 @@ src/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/camera.cpp.s
 .PHONY : src/camera.cpp.s
 
+src/detector.o: src/detector.cpp.o
+.PHONY : src/detector.o
+
+# target to build an object file
+src/detector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/detector.cpp.o
+.PHONY : src/detector.cpp.o
+
+src/detector.i: src/detector.cpp.i
+.PHONY : src/detector.i
+
+# target to preprocess a source file
+src/detector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/detector.cpp.i
+.PHONY : src/detector.cpp.i
+
+src/detector.s: src/detector.cpp.s
+.PHONY : src/detector.s
+
+# target to generate assembly for a file
+src/detector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/detector.cpp.s
+.PHONY : src/detector.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
+	@echo "... src/detector.o"
+	@echo "... src/detector.i"
+	@echo "... src/detector.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
