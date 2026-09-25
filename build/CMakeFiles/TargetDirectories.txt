@@ -1,3 +1,0 @@
-/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles/ProjectileTracker.dir
-/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles/edit_cache.dir
-/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles/rebuild_cache.dir

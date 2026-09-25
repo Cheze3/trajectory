@@ -1,3 +1,5 @@
-/calc
-/calc.cpp
-/build
+calc
+calc.cpp
+build/
+
+.DS_Store
