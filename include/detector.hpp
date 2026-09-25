@@ -5,5 +5,6 @@
 
 bool detectBall(
     const cv::Mat& frame,
-    cv::Point& ballPosition
+    cv::Point& ballPosition,
+    cv::Mat& mask
 );

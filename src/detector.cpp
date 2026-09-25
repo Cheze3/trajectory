@@ -3,16 +3,16 @@
 
 bool detectBall(
     const cv::Mat& frame,
-    cv::Point& ballPosition
+    cv::Point& ballPosition,
+    cv::Mat& mask
 ) {
     
     cv::Mat hsv;
     cv::cvtColor(frame, hsv, cv::COLOR_BGR2HSV);
 
-    cv::Scalar lowerOrange(8, 150, 120);
-    cv::Scalar upperOrange(20, 255, 255);
+    cv::Scalar lowerOrange(15, 160, 150);
+    cv::Scalar upperOrange(25, 255, 255);
 
-    cv::Mat mask;
     cv::inRange(hsv, lowerOrange, upperOrange, mask);
 
     cv::Mat labels;
@@ -47,6 +47,17 @@ bool detectBall(
         if (currentArea > largestArea) {
             largestObject = i;
         }
+    }
+
+    const int MIN_BALL_AREA = 500;
+
+    int largestArea = stats.at<int>(
+        largestObject,
+        cv::CC_STAT_AREA
+    );
+
+    if (largestArea < MIN_BALL_AREA) {
+        return false;
     }
 
     ballPosition.x = static_cast<int>(
