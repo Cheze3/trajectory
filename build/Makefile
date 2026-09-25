@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyProject
+# Target rules for targets named ProjectileTracker
 
 # Build rule for target.
-MyProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyProject
-.PHONY : MyProject
+ProjectileTracker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProjectileTracker
+.PHONY : ProjectileTracker
 
 # fast build rule for target.
-MyProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
-.PHONY : MyProject/fast
+ProjectileTracker/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/build
+.PHONY : ProjectileTracker/fast
 
 src/camera.o: src/camera.cpp.o
 .PHONY : src/camera.o
 
 # target to build an object file
 src/camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/camera.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/camera.cpp.o
 .PHONY : src/camera.cpp.o
 
 src/camera.i: src/camera.cpp.i
@@ -142,7 +142,7 @@ src/camera.i: src/camera.cpp.i
 
 # target to preprocess a source file
 src/camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/camera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/camera.cpp.i
 .PHONY : src/camera.cpp.i
 
 src/camera.s: src/camera.cpp.s
@@ -150,7 +150,7 @@ src/camera.s: src/camera.cpp.s
 
 # target to generate assembly for a file
 src/camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/camera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/camera.cpp.s
 .PHONY : src/camera.cpp.s
 
 src/detector.o: src/detector.cpp.o
@@ -158,7 +158,7 @@ src/detector.o: src/detector.cpp.o
 
 # target to build an object file
 src/detector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/detector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/detector.cpp.o
 .PHONY : src/detector.cpp.o
 
 src/detector.i: src/detector.cpp.i
@@ -166,7 +166,7 @@ src/detector.i: src/detector.cpp.i
 
 # target to preprocess a source file
 src/detector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/detector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/detector.cpp.i
 .PHONY : src/detector.cpp.i
 
 src/detector.s: src/detector.cpp.s
@@ -174,7 +174,7 @@ src/detector.s: src/detector.cpp.s
 
 # target to generate assembly for a file
 src/detector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/detector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/detector.cpp.s
 .PHONY : src/detector.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -182,7 +182,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -190,7 +190,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -198,8 +198,56 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/tracker.o: src/tracker.cpp.o
+.PHONY : src/tracker.o
+
+# target to build an object file
+src/tracker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/tracker.cpp.o
+.PHONY : src/tracker.cpp.o
+
+src/tracker.i: src/tracker.cpp.i
+.PHONY : src/tracker.i
+
+# target to preprocess a source file
+src/tracker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/tracker.cpp.i
+.PHONY : src/tracker.cpp.i
+
+src/tracker.s: src/tracker.cpp.s
+.PHONY : src/tracker.s
+
+# target to generate assembly for a file
+src/tracker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/tracker.cpp.s
+.PHONY : src/tracker.cpp.s
+
+src/trajectory.o: src/trajectory.cpp.o
+.PHONY : src/trajectory.o
+
+# target to build an object file
+src/trajectory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/trajectory.cpp.o
+.PHONY : src/trajectory.cpp.o
+
+src/trajectory.i: src/trajectory.cpp.i
+.PHONY : src/trajectory.i
+
+# target to preprocess a source file
+src/trajectory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/trajectory.cpp.i
+.PHONY : src/trajectory.cpp.i
+
+src/trajectory.s: src/trajectory.cpp.s
+.PHONY : src/trajectory.s
+
+# target to generate assembly for a file
+src/trajectory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/src/trajectory.cpp.s
+.PHONY : src/trajectory.cpp.s
 
 # Help Target
 help:
@@ -209,7 +257,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MyProject"
+	@echo "... ProjectileTracker"
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
@@ -219,6 +267,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/tracker.o"
+	@echo "... src/tracker.i"
+	@echo "... src/tracker.s"
+	@echo "... src/trajectory.o"
+	@echo "... src/trajectory.i"
+	@echo "... src/trajectory.s"
 .PHONY : help
 
 

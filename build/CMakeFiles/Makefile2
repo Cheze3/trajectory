@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /Users/binh/Desktop/wspace/trajectory/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MyProject.dir/all
+all: CMakeFiles/ProjectileTracker.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/MyProject.dir/codegen
+codegen: CMakeFiles/ProjectileTracker.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MyProject.dir/clean
+clean: CMakeFiles/ProjectileTracker.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MyProject.dir
+# Target rules for target CMakeFiles/ProjectileTracker.dir
 
 # All Build rule for target.
-CMakeFiles/MyProject.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles --progress-num=1,2,3,4 "Built target MyProject"
-.PHONY : CMakeFiles/MyProject.dir/all
+CMakeFiles/ProjectileTracker.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target ProjectileTracker"
+.PHONY : CMakeFiles/ProjectileTracker.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MyProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/binh/Desktop/wspace/trajectory/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyProject.dir/all
+CMakeFiles/ProjectileTracker.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/binh/Desktop/wspace/trajectory/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProjectileTracker.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/binh/Desktop/wspace/trajectory/build/CMakeFiles 0
-.PHONY : CMakeFiles/MyProject.dir/rule
+.PHONY : CMakeFiles/ProjectileTracker.dir/rule
 
 # Convenience name for target.
-MyProject: CMakeFiles/MyProject.dir/rule
-.PHONY : MyProject
+ProjectileTracker: CMakeFiles/ProjectileTracker.dir/rule
+.PHONY : ProjectileTracker
 
 # codegen rule for target.
-CMakeFiles/MyProject.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target MyProject"
-.PHONY : CMakeFiles/MyProject.dir/codegen
+CMakeFiles/ProjectileTracker.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/binh/Desktop/wspace/trajectory/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target ProjectileTracker"
+.PHONY : CMakeFiles/ProjectileTracker.dir/codegen
 
 # clean rule for target.
-CMakeFiles/MyProject.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/clean
-.PHONY : CMakeFiles/MyProject.dir/clean
+CMakeFiles/ProjectileTracker.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectileTracker.dir/build.make CMakeFiles/ProjectileTracker.dir/clean
+.PHONY : CMakeFiles/ProjectileTracker.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
